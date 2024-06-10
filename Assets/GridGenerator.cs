@@ -43,4 +43,14 @@ public class GridGenerator : MonoBehaviour
         }
     }
 
+    public void ClearGrid()
+    {
+        //find all game objects tagged as "Tile"
+        GameObject[] tiles = GameObject.FindGameObjectsWithTag("Tile");
+        foreach (GameObject tile in tiles)
+        {
+            DestroyImmediate(tile);
+        }
+    }
+
 }

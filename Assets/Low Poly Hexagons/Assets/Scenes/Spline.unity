@@ -154,7 +154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   width: 10
   height: 10
-  tilePrefab: {fileID: 2192690087620392529, guid: 993b90fb828f99449b09a18222050911,
+  tilePrefab: {fileID: 4684108913642415669, guid: 154703c8827a19241a289d4cd734d234,
     type: 3}
 --- !u!4 &299908489
 Transform:
