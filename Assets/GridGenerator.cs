@@ -49,6 +49,20 @@ public class GridGenerator : MonoBehaviour
         {
             DestroyImmediate(tile);
         }
+        
     }
-
+    
+    #region AddMaterialToTiles
+    public void AssignMaterial()
+    {
+        //Find all GameObjects tagged as "Tile"
+        GameObject[] tiles = GameObject.FindGameObjectsWithTag("Tile");
+        //if your assets or prefab are in the "Resources" folder...
+        Material material = Resources.Load<Material>("Tile");
+        foreach(GameObject t in tiles) //will apply the "Tile" tag on tiles
+        {
+            t.GetComponent<Renderer>().material = material;
+        }
+    }
 }
+#endregion
