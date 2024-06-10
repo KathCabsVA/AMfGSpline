@@ -18,6 +18,10 @@ public class GridGeneratorEditor : Editor
         {
             gridGenerator.ClearGrid();
         }
+        if (GUILayout.Button("AssignMaterial"))
+        {
+            gridGenerator.AssignMaterial();
+        }
     }
 
     [MenuItem("Tools/Generate Grid")]
