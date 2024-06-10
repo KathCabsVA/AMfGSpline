@@ -19,4 +19,38 @@ public class GridGeneratorEditor : Editor
             gridGenerator.ClearGrid();
         }
     }
+
+    [MenuItem("Tools/Generate Grid")]
+    public static void GenerateGridMenu()
+    {
+
+        GridGenerator gridGenerator = FindObjectOfType<GridGenerator>();
+        if (gridGenerator != null)
+        {
+            gridGenerator.GenerateGrid();
+        }
+        else
+        {
+            Debug.LogError("No Grid Generator Found in Scene");
+        }
+
+    }
+
+    [MenuItem("Tools/Clear Grid")]
+    public static void ClearGridMenu()
+    {
+
+        GridGenerator gridGenerator = FindObjectOfType<GridGenerator>();
+        if (gridGenerator != null)
+        {
+            gridGenerator.ClearGrid();
+        }
+        else
+        {
+            Debug.LogError("No Grid Generator Found in Scene");
+        }
+
+    }
+
+
 }
